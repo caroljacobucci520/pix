@@ -1,12 +1,15 @@
 package matera.bootcamp.pix.domain.model;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 
 @Entity
 public class ContaCorrente {
@@ -22,5 +25,13 @@ public class ContaCorrente {
     private Long conta;
 
     @Column(precision = 10, scale = 2, nullable = false)
-    private BigDecimal saldo;
+    private BigDecimal saldo = new BigDecimal("1000");
+
+    /*@OneToMany
+    private List<Chave> chaves;
+
+    @OneToOne(mappedBy = "contaCorrente")
+    private Usuario usuario;
+
+     */
 }

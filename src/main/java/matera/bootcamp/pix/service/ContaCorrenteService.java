@@ -5,4 +5,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class ContaCorrenteService {
 
+    public String imprimeConta(){
+        return "Teste";
+    }
 }
