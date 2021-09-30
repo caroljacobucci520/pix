@@ -1,11 +1,12 @@
-package matera.bootcamp.pix.service;
+package matera.bootcamp.pix.service.usuario;
 
 import org.springframework.stereotype.Service;
 
 @Service
 public class ContaCorrenteService {
 
-    public String imprimeConta(){
-        return "Teste";
+    public String printConta() {
+        return "123";
     }
+
 }
